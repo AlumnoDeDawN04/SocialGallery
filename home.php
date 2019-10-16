@@ -8,7 +8,7 @@
 <?php 
 include("conexion.php");?>
 <h2>Insertar usuarios</h2>
-	<form action="inserts.php" method="POST" name="formulario" enctype="multipart/form-data">
+	<form action="inserts_usuarios.php" method="POST" name="formulario" enctype="multipart/form-data">
 		<label for="user" class="boton">Usuario:</label>
 		<input type="string" name="user" required=""><br>
 		<label for="pwd" class="boton">Contraseña:</label>
