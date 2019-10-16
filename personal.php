@@ -33,7 +33,7 @@
 		de la base de datos  -->
 	<br><br>
 	<div class="largo">
-	<form action=".php" method="POST">
+	<form action="personal.php" method="POST">
 		<!-- Lo redirigmos a la misma pagina ya que no usaremos estos datos en mas sitios-->
 		<label for="orden" class="or">Seleccione el orden en el que quiere ver las imagenes:</label>
 			<select name="ordenado">

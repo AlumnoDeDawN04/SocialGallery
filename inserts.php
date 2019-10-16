@@ -36,7 +36,7 @@
 		while ($compimagen=mysqli_fetch_array($concompro)) {
 			if ($compimagen[0]==$ruta) {
 			//si ya hay alguno metido, sale del programa sin insertar nada
-				header("location: inicio.php");
+				header("location: personal.php");
 				exit();
 				echo "Esta repetida";
 				echo "$ruta";
@@ -63,5 +63,5 @@
 		echo "Selecciona una imagen con el tamaño mas bajo";
 	}	
 	//vuelve a la pagina de inicio cuando acabe lo necesario
-	header("location: inicio.php");
+	header("location: personal.php");
 ?>
