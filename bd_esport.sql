@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 16-10-2019 a las 19:50:18
+-- Tiempo de generación: 21-10-2019 a las 19:25:24
 -- Versión del servidor: 10.1.31-MariaDB
 -- Versión de PHP: 7.2.3
 
@@ -45,9 +45,7 @@ INSERT INTO `galeria` (`Id_foto`, `nom`, `ruta`, `data`, `usuario`) VALUES
 (3, 'Skate', '/maxresdefault.jpg', '2019-10-02', 2),
 (4, 'Natacion', '/NataciÃ³n-700x499.jpg', '2019-10-02', 3),
 (5, 'Volley', '/volleyball-1.jpg', '2019-10-02', 4),
-(15, 'BMX', '/erick_ponce_bmx.jpg', '2019-10-03', 1),
-(50, 'random', '/(1)Hanzo-At-Your-Service-480x280.jpg', '2019-10-07', 2),
-(51, 'random', '/1494444201635.jpg', '2019-10-14', 4);
+(15, 'BMX', '/erick_ponce_bmx.jpg', '2019-10-03', 1);
 
 -- --------------------------------------------------------
 
@@ -67,7 +65,7 @@ CREATE TABLE `usuarios` (
 
 INSERT INTO `usuarios` (`id`, `user`, `password`) VALUES
 (1, 'test', '81dc9bdb52d04dc20036dbd8313ed055'),
-(2, 'usuario2', 'c96dd568316deb9d8c7dec73b4c27cbb'),
+(2, 'usuario2', '81dc9bdb52d04dc20036dbd8313ed055'),
 (3, 'usuario3', '81dc9bdb52d04dc20036dbd8313ed055'),
 (4, 'usuario4', '81dc9bdb52d04dc20036dbd8313ed055');
 
@@ -96,13 +94,13 @@ ALTER TABLE `usuarios`
 -- AUTO_INCREMENT de la tabla `galeria`
 --
 ALTER TABLE `galeria`
-  MODIFY `Id_foto` int(2) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=52;
+  MODIFY `Id_foto` int(2) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=56;
 
 --
 -- AUTO_INCREMENT de la tabla `usuarios`
 --
 ALTER TABLE `usuarios`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
 
 --
 -- Restricciones para tablas volcadas

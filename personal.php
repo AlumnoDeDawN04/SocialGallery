@@ -4,9 +4,11 @@
 	<!-- Lo primero que tenemos que hacer es hacer que mire el archivo con los estilos y hacer que ejecute la pagina con UTF-8 -->
 	<link rel="stylesheet" type="text/css" href="estilos.css">
 	<meta charset="UTF-8">
+	<script type="text/javascript" src="validaciones.js"></script>
 	<title>Imagenes</title>
 </head>
 <body>
+	<a href="desconexion.php">Salir de la sesion</a>
 	<!-- Ahora debemos hacer que ejecute la conexion (redirigiendo a la pagina que la hace)-->
 	<?php 
 	session_start();
@@ -18,15 +20,16 @@
 	<!-- Hacemos un div que contiene el formulario para introducir nuevas imagenes -->
 	<div class="form">
 	<h1 class="titulo">Inserte datos</h1>
-	<form action="inserts.php" method="POST" name="formulario" enctype="multipart/form-data">
+	<form action="inserts.php" method="POST" name="formulario" enctype="multipart/form-data" onsubmit="return ValidacionInserts()">
 		<!-- Habiendo redirigido antes a la pagina donde se redigiran los datos para poder trabajar sobre ellos
 			Ahora solo debemos poner los datos que queremos saber dandoles un nombre 
 		 -->
+		 <p class="mensaje2" id="mensaje2"></p>
 		<label for="titulo" class="boton">Titulo de su imagen</label><br>
-		<input type="string" class="boton" name="titulo" required=""><br>
+		<input type="string" class="boton" name="titulo" id="titulo"><br>
 		<label for="imagen" class="boton">Introduzca su imagen:</label><br>
-		<input type="file" name="imagen" class="boton" required=""><br><br>
-		<input type="submit" name="imagen" class="boton">
+		<input type="file" name="imagen" class="boton" id="imagen"><br><br>
+		<input type="submit" name="enviar" class="boton">
 	</form>
 	</div>
 	<!-- Una vez finalizado el formulario anterior, hacemos otro para seleccionar el orden en el cual se mostraran los datos
@@ -100,7 +103,6 @@
 		}
 		} 
 		?>
-		<a href="desconexion.php">Salir de la sesion</a>
 			</div>
 		</div>
 </body>
