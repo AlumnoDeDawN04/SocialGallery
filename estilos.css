@@ -19,6 +19,16 @@
 	width: 40%;
 	margin-top: 5%;
 }
+.a{
+	width: 20%;
+	height: 10%;
+	border-style: double;
+	text-align: center;
+	position: fixed;
+	margin-left: 35%;
+	margin-top: 20%;
+	background-color: rgba(255,255,255,0.5);
+}
 .texto2{
 	border-style: double;
 	background-color: rgba(255,255,255,0.5);

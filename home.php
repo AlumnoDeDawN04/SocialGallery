@@ -7,8 +7,6 @@
 	<title>Sesiones</title>
 </head>
 <body>
-<?php 
-include("conexion.php");?>
 <div class="login">
 <h2>Insertar usuarios</h2>
 <p class="mensaje1" id="mensaje1"></p>
